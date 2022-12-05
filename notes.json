@@ -10,11 +10,12 @@
     },
     {
       "name": "Second note ",
-      "text": "#test \n# #f d #bjkj",
+      "text": "#test \n# #f d #bjkj #sd",
       "tagsFromText": [
         "#test",
         "#f",
-        "#bjkj"
+        "#bjkj",
+        "#sd"
       ],
       "id": "357.1724097076132"
     },

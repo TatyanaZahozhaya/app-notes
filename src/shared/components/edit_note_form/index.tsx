@@ -17,7 +17,7 @@ export const EditNoteForm: FC<SharedTypes.IDataNoteID> = memo(({ id }) => {
 
     useEffect(() => {
         dispatch(getNoteItem(id));
-    }, []);
+    }, [dispatch, id]);
 
     if (noteItemLoadingStatus === 'loading') {
         return <SharedComponents.WarningMessage text="Loading..." />;
