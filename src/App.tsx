@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { InnerRoutes, Paths, SharedTypes } from '@shared';
+
+import './App.scss';
+
+import { PageLayout } from '@page_layout';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Router>
+                <Routes>
+                    <Route
+                        key={Paths.PAGE_LAYOUT}
+                        element={<PageLayout />}>
+                        {InnerRoutes.map(renderRoutes)}
+                    </Route>
+                </Routes>
+            </Router>
+        </div>
+    );
 }
+
+const renderRoutes = ({ element, path }: SharedTypes.IRoute): React.ReactElement => {
+    return (
+        <Route
+            element={element}
+            path={path}
+            key={path}
+        />
+    );
+};
 
 export default App;

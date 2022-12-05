@@ -1,0 +1,40 @@
+{
+  "notes": [
+    {
+      "name": "Test note",
+      "text": "I wanna go to #shop ",
+      "tagsFromText": [
+        "#shop"
+      ],
+      "id": "315.27888691279117"
+    },
+    {
+      "name": "Second note ",
+      "text": "#test \n# #f d #bjkj",
+      "tagsFromText": [
+        "#test",
+        "#f",
+        "#bjkj"
+      ],
+      "id": "357.1724097076132"
+    },
+    {
+      "name": "Fight ",
+      "text": "a day may #come when we loose, but it's not #today. Today we fight    ",
+      "tagsFromText": [
+        "#come",
+        "#today"
+      ],
+      "id": "832.5356303139426"
+    },
+    {
+      "name": "You are better",
+      "text": "You’re much #better than #you think you are",
+      "tagsFromText": [
+        "#better",
+        "#you"
+      ],
+      "id": "286.380454513693"
+    }
+  ]
+}

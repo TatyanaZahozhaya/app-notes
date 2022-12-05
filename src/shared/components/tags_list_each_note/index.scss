@@ -1,0 +1,8 @@
+@import '../const.scss';
+
+.tags-note-box {
+    @include tags-box
+}
+.tags-note-item {
+    @include tag-item
+}

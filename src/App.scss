@@ -1,0 +1,10 @@
+@import '@shared/components/const.scss';
+
+.App {
+    font-family: $fontFfamily;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

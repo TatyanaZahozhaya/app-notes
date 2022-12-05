@@ -1,0 +1,32 @@
+@import '../const.scss';
+
+.note-form {
+    @include note-card;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 280px;
+    animation: brightUp 1s;
+}
+
+@keyframes brightUp {
+    from {
+        opacity: 0;
+    }
+}
+
+.note-form-textarea-field {
+    background-color: inherit;
+    padding: $minPadding;
+    resize: none;
+    margin: $minMargin 0;
+    width: 100%;
+}
+
+.note-form-button-box {
+    @include button-box;
+    margin: $mainMargin 0;
+}
+
+.note-form-button {
+    @include note-form-button;
+}

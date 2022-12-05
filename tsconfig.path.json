@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@home": ["./src/home"],
+            "@create_note_page": ["./src/create_note_page"],
+            "@edit_note_page": ["./src/edit_note_page"],
+            "@page_layout": ["./src/page_layout"],
+            "@page_not_found": ["./src/page_not_found"],
+            "@shared": ["./src/shared"]
+        }
+    }
+}

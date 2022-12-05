@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Klee One';
+    src: url('../../../public/fonts/KleeOne-Regular.ttf');
+}
+
+$fontFfamily: Klee One, Arial, Helvetica, sans-serif;
+$colorDecorative: white;
+$logoFontSize: 1.5rem;
+$noteNameFontSize: 1.2rem;
+$fontWeightNormal: 400;
+$fontWeightBold: 600;
+
+$decorativeColor: rgb(238, 164, 209);
+$decorativeColorDeep: rgb(235, 63, 166);
+$decorativeColorPlain: rgb(232, 193, 216);
+$backgroundColor: rgb(240, 248, 255);
+
+$maxAppWidth: 700px;
+$minAppWidth: 300px;
+
+$mainPadding: 20px;
+$mediumPadding: 10px;
+$minPadding: 5px;
+$mainMargin: 20px;
+$minMargin: 5px;
+
+$buttonSizeBig: 50px;
+$buttonSizeMedium: 30px;
+
+$borderRadiusRound: 50%;
+$thinBorder: 1px;
+$gap: 10px;
+
+@mixin round-button {
+    display: inline-grid;
+    justify-items: center;
+    align-items: center;
+    border-radius: $borderRadiusRound;
+}
+
+@mixin button-box {
+    display: inline-flex;
+    justify-items: center;
+    align-items: center;
+    gap: $gap;
+}
+
+@mixin note-form-button {
+    display: inline-block;
+    padding: $minPadding;
+    line-height: 1;
+    background-color: $decorativeColorDeep;
+    font-weight: $fontWeightBold;
+    border: $thinBorder;
+    border-style: solid;
+    border-color: $decorativeColorPlain;
+}
+
+@mixin note-card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    padding: $mediumPadding;
+    margin-bottom: $mainMargin;
+    border-color: $decorativeColor;
+    border-width: $thinBorder;
+    border-style: solid;
+    background-color: $backgroundColor;
+}
+
+@mixin tags-box {
+    display: flex;
+    gap: $gap;
+    flex-wrap: wrap;
+}
+
+@mixin tag-item {
+    background-color: $decorativeColorPlain;
+    padding: $minPadding;
+}
+
+.highlighted-word {
+    display: inline-block;
+    background-color: $decorativeColorPlain;
+}
+
+@keyframes brightUp {
+    from {
+        opacity: 0;
+    }
+}

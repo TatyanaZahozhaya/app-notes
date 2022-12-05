@@ -1,0 +1,12 @@
+@import '@shared/components/const.scss';
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    max-width: $maxAppWidth;
+    min-width: $minAppWidth;
+    margin: 0 auto;
+    padding: $mainPadding;
+    animation: brightUp 2s;
+}

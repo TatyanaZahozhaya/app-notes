@@ -1,0 +1,14 @@
+@import '@shared/components/const.scss';
+
+.add-note-button {
+    @include round-button;
+
+    width: $buttonSizeBig;
+    height: $buttonSizeBig;
+    position: sticky;
+    bottom: $mainMargin;
+    right: $mainMargin;
+    background-color: $decorativeColorDeep;
+    align-self: flex-end;
+    margin-top: $mainMargin;
+}

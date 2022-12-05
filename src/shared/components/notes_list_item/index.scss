@@ -1,0 +1,21 @@
+@import '../const.scss';
+
+.note-list-item {
+    @include note-card;
+    align-items: center;
+}
+
+.note-list-item-name {
+    font-size: $noteNameFontSize;
+}
+
+.note-list-item-button-box {
+    @include  button-box;
+}
+
+.notes-list-item-button {
+    @include round-button;
+    width: $buttonSizeMedium;
+    height: $buttonSizeMedium;
+    background-color: $decorativeColorPlain;
+}

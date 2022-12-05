@@ -1,0 +1,11 @@
+@import '../const.scss';
+
+.tag-search-panel-field {
+    border-color: $decorativeColorDeep;
+    border-style: solid;
+    border-width: $thinBorder;
+    width: 100%;
+    margin: $mainMargin 0;
+    padding: $minPadding $minPadding;
+    animation: brightUp 2s;
+}

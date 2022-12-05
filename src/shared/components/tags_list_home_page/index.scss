@@ -1,0 +1,17 @@
+@import '../const.scss';
+
+.tags-homepage-box {
+    @include tags-box;
+    animation: brightUp 2s;
+}
+
+.tag-homepage-item {
+    @include tag-item;
+
+    &:hover {
+        background-color: $decorativeColor;
+    }
+    &:focus {
+        background-color: $decorativeColor;
+    }
+}

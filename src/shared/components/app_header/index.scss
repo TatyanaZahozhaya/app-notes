@@ -1,0 +1,13 @@
+@import '../const.scss';
+
+header {
+    background-color: $decorativeColor;
+    padding: $mainPadding ;
+    text-align: right;
+
+
+}
+.header-logo {
+    font-weight: $fontWeightBold;
+    font-size: $logoFontSize;
+}
